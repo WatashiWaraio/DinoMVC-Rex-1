@@ -1,3 +1,8 @@
+# Netbeans
+/test/
+/nbproject/private/
+manifest.mf
+
 # Compiled class file
 *.class
 
