@@ -24,6 +24,8 @@ public class UIUSER extends javax.swing.JFrame {
         tutorialesbtn = new javax.swing.JButton();
         capacitacionesbtn = new javax.swing.JButton();
         configuracionesbtn = new javax.swing.JButton();
+        mancha2 = new javax.swing.JLabel();
+        mancha1 = new javax.swing.JLabel();
         Fondoblanco = new javax.swing.JPanel();
         Funciones = new javax.swing.JPanel();
         Bienvenido = new javax.swing.JLabel();
@@ -94,6 +96,14 @@ public class UIUSER extends javax.swing.JFrame {
             }
         });
         panelAzul.add(configuracionesbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 140, 30));
+
+        mancha2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Vector 1.png"))); // NOI18N
+        mancha2.setText("jLabel1");
+        panelAzul.add(mancha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 260));
+
+        mancha1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Ellipse.png"))); // NOI18N
+        mancha1.setText("jLabel1");
+        panelAzul.add(mancha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, -1, -1));
 
         getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 720));
 
@@ -241,6 +251,8 @@ public class UIUSER extends javax.swing.JFrame {
     private javax.swing.JButton capacitacionesbtn;
     private javax.swing.JButton configuracionesbtn;
     private javax.swing.JLabel inicio;
+    private javax.swing.JLabel mancha1;
+    private javax.swing.JLabel mancha2;
     private javax.swing.JPanel panelAzul;
     private javax.swing.JButton tutorialesbtn;
     // End of variables declaration//GEN-END:variables
