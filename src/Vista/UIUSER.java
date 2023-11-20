@@ -16,8 +16,7 @@ public class UIUSER extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         panelAzul = new javax.swing.JPanel();
         Configuracionbtn = new javax.swing.JButton();
@@ -44,10 +43,9 @@ public class UIUSER extends javax.swing.JFrame {
         Configuracionbtn.setBackground(new java.awt.Color(31, 65, 169));
         Configuracionbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         Configuracionbtn.setForeground(new java.awt.Color(255, 255, 255));
-        Configuracionbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        Configuracionbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Setting.png"))); // NOI18N
+        Configuracionbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ConfiguracionbtnActionPerformed(evt);
             }
         });
@@ -56,10 +54,9 @@ public class UIUSER extends javax.swing.JFrame {
         Iniciobtn.setBackground(new java.awt.Color(31, 65, 169));
         Iniciobtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         Iniciobtn.setForeground(new java.awt.Color(255, 255, 255));
-        Iniciobtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        Iniciobtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Home.png"))); // NOI18N
+        Iniciobtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IniciobtnActionPerformed(evt);
             }
         });
@@ -68,10 +65,9 @@ public class UIUSER extends javax.swing.JFrame {
         tutorialesbtn.setBackground(new java.awt.Color(31, 65, 169));
         tutorialesbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         tutorialesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        tutorialesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        tutorialesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Category.png"))); // NOI18N
+        tutorialesbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tutorialesbtnActionPerformed(evt);
             }
         });
@@ -80,10 +76,9 @@ public class UIUSER extends javax.swing.JFrame {
         capacitacionesbtn.setBackground(new java.awt.Color(31, 65, 169));
         capacitacionesbtn.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         capacitacionesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        capacitacionesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        capacitacionesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Chat.png"))); // NOI18N
+        capacitacionesbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 capacitacionesbtnActionPerformed(evt);
             }
         });
@@ -92,10 +87,9 @@ public class UIUSER extends javax.swing.JFrame {
         configuracionesbtn.setBackground(new java.awt.Color(31, 65, 169));
         configuracionesbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         configuracionesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        configuracionesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        configuracionesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Folder.png"))); // NOI18N
+        configuracionesbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 configuracionesbtnActionPerformed(evt);
             }
         });
@@ -122,10 +116,8 @@ public class UIUSER extends javax.swing.JFrame {
         OrdenPedidobtn.setBorder(null);
         OrdenPedidobtn.setBorderPainted(false);
         OrdenPedidobtn.setContentAreaFilled(false);
-        OrdenPedidobtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        OrdenPedidobtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 OrdenPedidobtnActionPerformed(evt);
             }
         });
@@ -143,10 +135,8 @@ public class UIUSER extends javax.swing.JFrame {
         PQR.setContentAreaFilled(false);
         PQR.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         PQR.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PQR.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        PQR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PQRActionPerformed(evt);
             }
         });
@@ -157,16 +147,14 @@ public class UIUSER extends javax.swing.JFrame {
         TINTURADOS.setContentAreaFilled(false);
         TINTURADOS.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         TINTURADOS.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        TINTURADOS.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        TINTURADOS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TINTURADOSActionPerformed(evt);
             }
         });
         Funciones.add(TINTURADOS, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, 180, 130));
 
-        Fondoblanco.add(Funciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 390));
+        Fondoblanco.add(Funciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 720));
 
         getContentPane().add(Fondoblanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 1060, 720));
 
@@ -193,17 +181,17 @@ public class UIUSER extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_IniciobtnActionPerformed
 
-    private void OrdenPedidobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrdenPedidobtnActionPerformed
+    private void TINTURADOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TINTURADOSActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_OrdenPedidobtnActionPerformed
+    }//GEN-LAST:event_TINTURADOSActionPerformed
 
     private void PQRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PQRActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PQRActionPerformed
 
-    private void TINTURADOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TINTURADOSActionPerformed
+    private void OrdenPedidobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrdenPedidobtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TINTURADOSActionPerformed
+    }//GEN-LAST:event_OrdenPedidobtnActionPerformed
 
     /**
      * @param args the command line arguments
