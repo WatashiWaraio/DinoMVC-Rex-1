@@ -16,8 +16,7 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         panelAzul = new javax.swing.JPanel();
         Bienvenido = new javax.swing.JLabel();
@@ -31,7 +30,7 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         Nombre = new javax.swing.JLabel();
         Edad = new javax.swing.JLabel();
         Contraseña = new javax.swing.JLabel();
-        ID = new javax.swing.JLabel();
+        tipo = new javax.swing.JLabel();
         IDField = new javax.swing.JTextField();
         NombreField = new javax.swing.JTextField();
         EdadField = new javax.swing.JTextField();
@@ -40,6 +39,9 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         EliminarUsuarioBTN = new javax.swing.JButton();
         ContraseñaField = new javax.swing.JPasswordField();
         CrearUsuarioBTN1 = new javax.swing.JButton();
+        tipoAdminBTN = new javax.swing.JRadioButton();
+        tipoUsuarioBTN = new javax.swing.JRadioButton();
+        ID1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -56,19 +58,19 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         panelAzulLayout.setHorizontalGroup(
             panelAzulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelAzulLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(31, 31, 31)
                 .addComponent(Bienvenido)
-                .addContainerGap(276, Short.MAX_VALUE))
+                .addContainerGap(335, Short.MAX_VALUE))
         );
         panelAzulLayout.setVerticalGroup(
             panelAzulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelAzulLayout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(27, 27, 27)
                 .addComponent(Bienvenido)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
-        getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 80));
+        getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 80));
 
         panelblanco.setBackground(new java.awt.Color(255, 255, 255));
         panelblanco.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -77,39 +79,36 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         Titulo.setForeground(new java.awt.Color(255, 255, 255));
         Titulo.setText("Administracion de usurarios");
         panelblanco.add(Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
-        panelblanco.add(BuscarField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 220, 30));
+        panelblanco.add(BuscarField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 260, 30));
 
         BuscarBTN.setBackground(new java.awt.Color(185, 189, 193));
         BuscarBTN.setForeground(new java.awt.Color(185, 189, 193));
+        BuscarBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/search 1.png"))); // NOI18N
         BuscarBTN.setBorder(null);
         BuscarBTN.setBorderPainted(false);
         BuscarBTN.setDefaultCapable(false);
         BuscarBTN.setFocusPainted(false);
-        BuscarBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        BuscarBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BuscarBTNActionPerformed(evt);
             }
         });
-        panelblanco.add(BuscarBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 40, 30));
+        panelblanco.add(BuscarBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 150, 40, 30));
 
         TablaUsers.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null}
             },
-            new String []
-            {
+            new String [] {
                 "Nombre", "Edad", "Contraseña ", "ID"
             }
         ));
         tablaUsers.setViewportView(TablaUsers);
 
-        panelblanco.add(tablaUsers, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 440, 80));
+        panelblanco.add(tablaUsers, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 530, 130));
 
         Bienvenido3.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
         Bienvenido3.setText("Buscar usuario");
@@ -117,85 +116,87 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
 
         Nombre.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
         Nombre.setText("Nombre ");
-        panelblanco.add(Nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, -1));
+        panelblanco.add(Nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, -1, -1));
 
         Edad.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
         Edad.setText("Edad");
-        panelblanco.add(Edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, -1));
+        panelblanco.add(Edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, -1, -1));
 
         Contraseña.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
         Contraseña.setText("Contraseña");
-        panelblanco.add(Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, -1));
+        panelblanco.add(Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
 
-        ID.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        ID.setText("ID");
-        panelblanco.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 490, -1, -1));
-        panelblanco.add(IDField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 170, -1));
+        tipo.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
+        tipo.setText("Tipo");
+        panelblanco.add(tipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, -1, -1));
+        panelblanco.add(IDField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 450, 230, -1));
 
-        NombreField.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        NombreField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NombreFieldActionPerformed(evt);
             }
         });
-        panelblanco.add(NombreField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 170, -1));
-        panelblanco.add(EdadField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 170, -1));
+        panelblanco.add(NombreField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 230, -1));
+        panelblanco.add(EdadField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, 60, -1));
 
         ConsultarTodosBTN.setBackground(new java.awt.Color(59, 159, 255));
         ConsultarTodosBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         ConsultarTodosBTN.setForeground(new java.awt.Color(255, 255, 255));
         ConsultarTodosBTN.setText("Consultar Todos ");
-        ConsultarTodosBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        ConsultarTodosBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ConsultarTodosBTNActionPerformed(evt);
             }
         });
-        panelblanco.add(ConsultarTodosBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, 30));
+        panelblanco.add(ConsultarTodosBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, 190, 30));
 
         ActualizarUsuarioBTN.setBackground(new java.awt.Color(59, 159, 255));
         ActualizarUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         ActualizarUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
         ActualizarUsuarioBTN.setText("Actualizar Usuario ");
-        ActualizarUsuarioBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        ActualizarUsuarioBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ActualizarUsuarioBTNActionPerformed(evt);
             }
         });
-        panelblanco.add(ActualizarUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 410, 170, 40));
+        panelblanco.add(ActualizarUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 590, 170, 40));
 
         EliminarUsuarioBTN.setBackground(new java.awt.Color(59, 159, 255));
         EliminarUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         EliminarUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
         EliminarUsuarioBTN.setText("Eliminar Usuario");
-        EliminarUsuarioBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        EliminarUsuarioBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EliminarUsuarioBTNActionPerformed(evt);
             }
         });
-        panelblanco.add(EliminarUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 480, 170, 40));
-        panelblanco.add(ContraseñaField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 170, -1));
+        panelblanco.add(EliminarUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 590, 170, 40));
+        panelblanco.add(ContraseñaField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, 230, -1));
 
         CrearUsuarioBTN1.setBackground(new java.awt.Color(59, 159, 255));
         CrearUsuarioBTN1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         CrearUsuarioBTN1.setForeground(new java.awt.Color(255, 255, 255));
         CrearUsuarioBTN1.setText("Crear Usuario");
-        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CrearUsuarioBTN1ActionPerformed(evt);
             }
         });
-        panelblanco.add(CrearUsuarioBTN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 340, 170, 40));
+        panelblanco.add(CrearUsuarioBTN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, 170, 40));
 
-        getContentPane().add(panelblanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 730));
+        tipoAdminBTN.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
+        tipoAdminBTN.setText("ADMINISTRADOR ");
+        panelblanco.add(tipoAdminBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 540, -1, -1));
+
+        tipoUsuarioBTN.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
+        tipoUsuarioBTN.setText("USUARIO");
+        panelblanco.add(tipoUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, -1, -1));
+
+        ID1.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
+        ID1.setText("ID");
+        panelblanco.add(ID1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 420, -1, -1));
+
+        getContentPane().add(panelblanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 730));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -272,7 +273,7 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
     private javax.swing.JLabel Edad;
     public javax.swing.JTextField EdadField;
     public javax.swing.JButton EliminarUsuarioBTN;
-    private javax.swing.JLabel ID;
+    private javax.swing.JLabel ID1;
     public javax.swing.JTextField IDField;
     private javax.swing.JLabel Nombre;
     public javax.swing.JTextField NombreField;
@@ -281,5 +282,8 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
     private javax.swing.JPanel panelAzul;
     private javax.swing.JPanel panelblanco;
     private javax.swing.JScrollPane tablaUsers;
+    private javax.swing.JLabel tipo;
+    public javax.swing.JRadioButton tipoAdminBTN;
+    public javax.swing.JRadioButton tipoUsuarioBTN;
     // End of variables declaration//GEN-END:variables
 }
