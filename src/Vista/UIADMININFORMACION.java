@@ -16,8 +16,7 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         PanelBlanco = new javax.swing.JPanel();
         Bienvenido3 = new javax.swing.JLabel();
@@ -27,6 +26,8 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         CrearUsuarioBTN1 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        textAreaInfo = new javax.swing.JTextArea();
         panelAzul = new javax.swing.JPanel();
         Bienvenido = new javax.swing.JLabel();
 
@@ -45,12 +46,11 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
 
         searchbtn.setBackground(new java.awt.Color(185, 189, 193));
         searchbtn.setForeground(new java.awt.Color(185, 189, 193));
+        searchbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/search 1.png"))); // NOI18N
         searchbtn.setBorder(null);
         searchbtn.setBorderPainted(false);
-        searchbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        searchbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchbtnActionPerformed(evt);
             }
         });
@@ -60,46 +60,46 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
         CrearUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         CrearUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
         CrearUsuarioBTN.setText("Actualizar Tutorial");
-        CrearUsuarioBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        CrearUsuarioBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CrearUsuarioBTNActionPerformed(evt);
             }
         });
-        PanelBlanco.add(CrearUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 170, 40));
+        PanelBlanco.add(CrearUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 560, 170, 40));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
                 {null},
                 {null},
                 {null},
                 {null}
             },
-            new String []
-            {
+            new String [] {
                 "Tutorial"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        PanelBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, 110));
+        PanelBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 570, 110));
 
         CrearUsuarioBTN1.setBackground(new java.awt.Color(59, 159, 255));
         CrearUsuarioBTN1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         CrearUsuarioBTN1.setForeground(new java.awt.Color(255, 255, 255));
         CrearUsuarioBTN1.setText("Eliminar Tutorial");
-        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CrearUsuarioBTN1ActionPerformed(evt);
             }
         });
-        PanelBlanco.add(CrearUsuarioBTN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 170, 40));
+        PanelBlanco.add(CrearUsuarioBTN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 170, 40));
 
-        getContentPane().add(PanelBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 530, 640));
+        textAreaInfo.setColumns(20);
+        textAreaInfo.setRows(5);
+        jScrollPane2.setViewportView(textAreaInfo);
+
+        PanelBlanco.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 560, 240));
+
+        getContentPane().add(PanelBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 620, 640));
 
         panelAzul.setBackground(new java.awt.Color(35, 69, 169));
 
@@ -114,7 +114,7 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
             .addGroup(panelAzulLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(Bienvenido)
-                .addContainerGap(245, Short.MAX_VALUE))
+                .addContainerGap(335, Short.MAX_VALUE))
         );
         panelAzulLayout.setVerticalGroup(
             panelAzulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -124,7 +124,7 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
-        getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 80));
+        getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 80));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -184,8 +184,10 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
     private javax.swing.JButton CrearUsuarioBTN1;
     private javax.swing.JPanel PanelBlanco;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel panelAzul;
     private javax.swing.JButton searchbtn;
+    private javax.swing.JTextArea textAreaInfo;
     // End of variables declaration//GEN-END:variables
 }

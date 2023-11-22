@@ -23,8 +23,7 @@ public class UILOGIN extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jFondo = new javax.swing.JPanel();
         Password = new javax.swing.JPasswordField();
@@ -49,17 +48,13 @@ public class UILOGIN extends javax.swing.JFrame {
         Password.setText("************");
         Password.setToolTipText("PassWord");
         Password.setBorder(null);
-        Password.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+        Password.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 PasswordMousePressed(evt);
             }
         });
-        Password.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        Password.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PasswordActionPerformed(evt);
             }
         });
@@ -73,10 +68,8 @@ public class UILOGIN extends javax.swing.JFrame {
         Username.setForeground(new java.awt.Color(165, 165, 165));
         Username.setText("Username");
         Username.setBorder(null);
-        Username.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mousePressed(java.awt.event.MouseEvent evt)
-            {
+        Username.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
                 UsernameMousePressed(evt);
             }
         });
@@ -95,10 +88,8 @@ public class UILOGIN extends javax.swing.JFrame {
         loginbtn.setRequestFocusEnabled(false);
         loginbtn.setRolloverEnabled(false);
         loginbtn.setVerifyInputWhenFocusTarget(false);
-        loginbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        loginbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginbtnActionPerformed(evt);
             }
         });
@@ -205,8 +196,8 @@ public class UILOGIN extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPasswordField Password;
-    private javax.swing.JTextField Username;
+    public javax.swing.JPasswordField Password;
+    public javax.swing.JTextField Username;
     private javax.swing.JPanel jFondo;
     private javax.swing.JLabel jLOGINTEXT;
     private javax.swing.JLabel jLineas;

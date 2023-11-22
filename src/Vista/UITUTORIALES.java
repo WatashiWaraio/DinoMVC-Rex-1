@@ -16,8 +16,7 @@ public class UITUTORIALES extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         panelAzul = new javax.swing.JPanel();
         Iniciobtn = new javax.swing.JButton();
@@ -43,10 +42,8 @@ public class UITUTORIALES extends javax.swing.JFrame {
         Iniciobtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         Iniciobtn.setForeground(new java.awt.Color(255, 255, 255));
         Iniciobtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Home.png"))); // NOI18N
-        Iniciobtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        Iniciobtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IniciobtnActionPerformed(evt);
             }
         });
@@ -56,10 +53,8 @@ public class UITUTORIALES extends javax.swing.JFrame {
         Configuracionbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         Configuracionbtn.setForeground(new java.awt.Color(255, 255, 255));
         Configuracionbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Setting.png"))); // NOI18N
-        Configuracionbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        Configuracionbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ConfiguracionbtnActionPerformed(evt);
             }
         });
@@ -69,10 +64,8 @@ public class UITUTORIALES extends javax.swing.JFrame {
         tutorialesbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         tutorialesbtn.setForeground(new java.awt.Color(255, 255, 255));
         tutorialesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Category.png"))); // NOI18N
-        tutorialesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        tutorialesbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tutorialesbtnActionPerformed(evt);
             }
         });
@@ -82,10 +75,8 @@ public class UITUTORIALES extends javax.swing.JFrame {
         capacitacionesbtn.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         capacitacionesbtn.setForeground(new java.awt.Color(255, 255, 255));
         capacitacionesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Folder.png"))); // NOI18N
-        capacitacionesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        capacitacionesbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 capacitacionesbtnActionPerformed(evt);
             }
         });
@@ -95,18 +86,18 @@ public class UITUTORIALES extends javax.swing.JFrame {
         configuracionesbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         configuracionesbtn.setForeground(new java.awt.Color(255, 255, 255));
         configuracionesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Chat.png"))); // NOI18N
-        configuracionesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        configuracionesbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 configuracionesbtnActionPerformed(evt);
             }
         });
         panelAzul.add(configuracionesbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 140, 30));
 
+        mancha1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Ellipse.png"))); // NOI18N
         mancha1.setText("jLabel1");
         panelAzul.add(mancha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, -1, -1));
 
+        mancha2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Vector 1.png"))); // NOI18N
         mancha2.setText("jLabel1");
         panelAzul.add(mancha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 260));
 
@@ -119,24 +110,21 @@ public class UITUTORIALES extends javax.swing.JFrame {
         jTextField1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         jTextField1.setText("Buscar...");
-        jTextField1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
         panelblanco.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 840, 40));
 
+        jPanel1.setForeground(new java.awt.Color(242, 242, 242));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         panelblanco.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 890, 580));
 
         jToggleButton1.setBackground(new java.awt.Color(185, 189, 193));
         jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/search 1.png"))); // NOI18N
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton1ActionPerformed(evt);
             }
         });
