@@ -1,33 +1,36 @@
 package Controllers;
 
-import ModeloDAO.Persistente;
+import Vista.UILOGIN;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import ModeloDAO.ArchivoHashMap;
 import ModeloDTO.Usuario;
-import Vista.UILOGIN;
 
-public class ControllerLogin {
+public class ControllerLogin implements ActionListener{
     
-    private final UILOGIN login;
-    private final Persistente user_dao;
-    private Usuario funciones;
+    private UILOGIN VistaLogin;
+    private Usuario usuario;
 
-    public ControllerLogin(UILOGIN login, Persistente user_dao) {
-        this.login = login;
-        this.user_dao = user_dao;
-        this.login.loginbtn.addActionListener((ActionListener) this);
-        this.login.setVisible(true);
+    public ControllerLogin(UILOGIN VistaLogin) {
+        this.VistaLogin = VistaLogin;
+        this.VistaLogin.loginbtn.addActionListener((ActionListener)this);
+
+        this.VistaLogin.setVisible(true);
     }
     
-    /**
-     *
-     * @param e
-     */
-    public void actionPerformed(ActionEvent  e){
-        if(e.getSource() == login.loginbtn){
     
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == VistaLogin.loginbtn) {
+            
+            String identificacion = VistaLogin.UsuarioField.getText();
+            char[] Contrasena = VistaLogin.contraseñaField.getPassword();
+            
+            
+            
+            
         }
-        
         
     }
     

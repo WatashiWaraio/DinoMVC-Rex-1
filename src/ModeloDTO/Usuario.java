@@ -1,6 +1,8 @@
 package ModeloDTO;
 
-public class Usuario extends Buscable {
+import java.io.Serializable;
+
+public class Usuario extends Buscable implements Serializable {
     private String tipo; 
     private String nombre;
     private int edad;

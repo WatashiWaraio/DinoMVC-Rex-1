@@ -1,10 +1,14 @@
 package Vista;
 
+import javax.swing.table.DefaultTableModel;
+
 public class UIADMINUSUARIOS extends javax.swing.JFrame {
 
     /**
-     * Creates new form UIADMINUSUARIOS
+     * Creates new form adminUsuariosVista
      */
+    
+  
     public UIADMINUSUARIOS() {
         initComponents();
     }
@@ -16,36 +20,34 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
+        BOTONES = new javax.swing.ButtonGroup();
         panelAzul = new javax.swing.JPanel();
         Bienvenido = new javax.swing.JLabel();
-        panelblanco = new javax.swing.JPanel();
-        Titulo = new javax.swing.JLabel();
+        Bienvenido3 = new javax.swing.JLabel();
         BuscarField = new javax.swing.JTextField();
-        BuscarBTN = new javax.swing.JButton();
+        searchbtn = new javax.swing.JButton();
+        ConsultarTodosBTN = new javax.swing.JButton();
         tablaUsers = new javax.swing.JScrollPane();
         TablaUsers = new javax.swing.JTable();
-        Bienvenido3 = new javax.swing.JLabel();
         Nombre = new javax.swing.JLabel();
         Edad = new javax.swing.JLabel();
-        Contraseña = new javax.swing.JLabel();
-        ID = new javax.swing.JLabel();
-        IDField = new javax.swing.JTextField();
         NombreField = new javax.swing.JTextField();
         EdadField = new javax.swing.JTextField();
-        ConsultarTodosBTN = new javax.swing.JButton();
-        ActualizarUsuarioBTN = new javax.swing.JButton();
-        EliminarUsuarioBTN = new javax.swing.JButton();
+        Contraseña = new javax.swing.JLabel();
         ContraseñaField = new javax.swing.JPasswordField();
-        CrearUsuarioBTN1 = new javax.swing.JButton();
         ID1 = new javax.swing.JLabel();
+        IDField = new javax.swing.JTextField();
+        Tipo = new javax.swing.JLabel();
         TipoAdminBTN = new javax.swing.JRadioButton();
         TipoUserBTN = new javax.swing.JRadioButton();
+        CrearUsuarioBTN1 = new javax.swing.JButton();
+        ActualizarUsuarioBTN = new javax.swing.JButton();
+        EliminarUsuarioBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelAzul.setBackground(new java.awt.Color(35, 69, 169));
 
@@ -60,7 +62,7 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
             .addGroup(panelAzulLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(Bienvenido)
-                .addContainerGap(366, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelAzulLayout.setVerticalGroup(
             panelAzulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -70,145 +72,227 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
-        getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 80));
-
-        panelblanco.setBackground(new java.awt.Color(255, 255, 255));
-        panelblanco.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Titulo.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        Titulo.setForeground(new java.awt.Color(255, 255, 255));
-        Titulo.setText("Administracion de usurarios");
-        panelblanco.add(Titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
-        panelblanco.add(BuscarField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 290, 30));
-
-        BuscarBTN.setBackground(new java.awt.Color(185, 189, 193));
-        BuscarBTN.setForeground(new java.awt.Color(185, 189, 193));
-        BuscarBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/search 1.png"))); // NOI18N
-        BuscarBTN.setBorder(null);
-        BuscarBTN.setBorderPainted(false);
-        BuscarBTN.setDefaultCapable(false);
-        BuscarBTN.setFocusPainted(false);
-        BuscarBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BuscarBTNActionPerformed(evt);
-            }
-        });
-        panelblanco.add(BuscarBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, 40, 30));
-
-        TablaUsers.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Nombre", "Edad", "Contraseña ", "ID"
-            }
-        ));
-        tablaUsers.setViewportView(TablaUsers);
-
-        panelblanco.add(tablaUsers, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 540, 140));
-
         Bienvenido3.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
         Bienvenido3.setText("Buscar usuario");
-        panelblanco.add(Bienvenido3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
-        Nombre.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        Nombre.setText("Nombre ");
-        panelblanco.add(Nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, -1));
-
-        Edad.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        Edad.setText("Edad");
-        panelblanco.add(Edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 340, -1, -1));
-
-        Contraseña.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        Contraseña.setText("Contraseña");
-        panelblanco.add(Contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, -1, -1));
-
-        ID.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        ID.setText("Tipo");
-        panelblanco.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 490, -1, -1));
-        panelblanco.add(IDField, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 440, 170, -1));
-
-        NombreField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NombreFieldActionPerformed(evt);
+        searchbtn.setBackground(new java.awt.Color(59, 159, 255));
+        searchbtn.setForeground(new java.awt.Color(185, 189, 193));
+        searchbtn.setText("BUSCAR");
+        searchbtn.setBorder(null);
+        searchbtn.setBorderPainted(false);
+        searchbtn.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                searchbtnActionPerformed(evt);
             }
         });
-        panelblanco.add(NombreField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 170, -1));
-        panelblanco.add(EdadField, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 370, 80, -1));
 
         ConsultarTodosBTN.setBackground(new java.awt.Color(59, 159, 255));
         ConsultarTodosBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         ConsultarTodosBTN.setForeground(new java.awt.Color(255, 255, 255));
         ConsultarTodosBTN.setText("Consultar Todos ");
-        ConsultarTodosBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        ConsultarTodosBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 ConsultarTodosBTNActionPerformed(evt);
             }
         });
-        panelblanco.add(ConsultarTodosBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 180, 30));
 
-        ActualizarUsuarioBTN.setBackground(new java.awt.Color(59, 159, 255));
-        ActualizarUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        ActualizarUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
-        ActualizarUsuarioBTN.setText("Actualizar Usuario ");
-        ActualizarUsuarioBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ActualizarUsuarioBTNActionPerformed(evt);
+        TablaUsers.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][]
+            {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String []
+            {
+                "ID", "Edad", "Nombre"
+            }
+        ));
+        tablaUsers.setViewportView(TablaUsers);
+
+        Nombre.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
+        Nombre.setText("Nombre ");
+
+        Edad.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
+        Edad.setText("Edad");
+
+        NombreField.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                NombreFieldActionPerformed(evt);
             }
         });
-        panelblanco.add(ActualizarUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 580, 170, 40));
 
-        EliminarUsuarioBTN.setBackground(new java.awt.Color(59, 159, 255));
-        EliminarUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        EliminarUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
-        EliminarUsuarioBTN.setText("Eliminar Usuario");
-        EliminarUsuarioBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EliminarUsuarioBTNActionPerformed(evt);
+        Contraseña.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
+        Contraseña.setText("Contraseña");
+
+        ID1.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
+        ID1.setText("ID");
+
+        Tipo.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
+        Tipo.setText("Tipo");
+
+        TipoAdminBTN.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
+        TipoAdminBTN.setText("ADMINISTRADOR");
+        TipoAdminBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                TipoAdminBTNActionPerformed(evt);
             }
         });
-        panelblanco.add(EliminarUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 580, 170, 40));
-        panelblanco.add(ContraseñaField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 170, -1));
+
+        TipoUserBTN.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
+        TipoUserBTN.setText("USUARIO");
 
         CrearUsuarioBTN1.setBackground(new java.awt.Color(59, 159, 255));
         CrearUsuarioBTN1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         CrearUsuarioBTN1.setForeground(new java.awt.Color(255, 255, 255));
         CrearUsuarioBTN1.setText("Crear Usuario");
-        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 CrearUsuarioBTN1ActionPerformed(evt);
             }
         });
-        panelblanco.add(CrearUsuarioBTN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 170, 40));
 
-        ID1.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        ID1.setText("ID");
-        panelblanco.add(ID1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, -1, -1));
-
-        TipoAdminBTN.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
-        TipoAdminBTN.setText("ADMINISTRADOR");
-        TipoAdminBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TipoAdminBTNActionPerformed(evt);
+        ActualizarUsuarioBTN.setBackground(new java.awt.Color(59, 159, 255));
+        ActualizarUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        ActualizarUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
+        ActualizarUsuarioBTN.setText("Actualizar Usuario ");
+        ActualizarUsuarioBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                ActualizarUsuarioBTNActionPerformed(evt);
             }
         });
-        panelblanco.add(TipoAdminBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, -1, -1));
 
-        TipoUserBTN.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
-        TipoUserBTN.setText("USUARIO");
-        panelblanco.add(TipoUserBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 530, -1, -1));
+        EliminarUsuarioBTN.setBackground(new java.awt.Color(59, 159, 255));
+        EliminarUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        EliminarUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
+        EliminarUsuarioBTN.setText("Eliminar Usuario");
+        EliminarUsuarioBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                EliminarUsuarioBTNActionPerformed(evt);
+            }
+        });
 
-        getContentPane().add(panelblanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 730));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAzul, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(CrearUsuarioBTN1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(ActualizarUsuarioBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(EliminarUsuarioBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tablaUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(BuscarField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(searchbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(ConsultarTodosBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Bienvenido3)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Nombre)
+                            .addComponent(NombreField, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Contraseña)
+                            .addComponent(ContraseñaField, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tipo))
+                        .addGap(95, 95, 95)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(IDField, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ID1)
+                            .addComponent(EdadField, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Edad)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(TipoAdminBTN)
+                        .addGap(18, 18, 18)
+                        .addComponent(TipoUserBTN)))
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelAzul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42)
+                .addComponent(Bienvenido3)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BuscarField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ConsultarTodosBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(tablaUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Nombre)
+                    .addComponent(Edad))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(NombreField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EdadField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Contraseña)
+                    .addComponent(ID1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ContraseñaField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(IDField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addComponent(Tipo)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TipoAdminBTN)
+                    .addComponent(TipoUserBTN))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CrearUsuarioBTN1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ActualizarUsuarioBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EliminarUsuarioBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 30, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void searchbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchbtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchbtnActionPerformed
+
     private void ConsultarTodosBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsultarTodosBTNActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ConsultarTodosBTNActionPerformed
+
+    private void NombreFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NombreFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NombreFieldActionPerformed
+
+    private void TipoAdminBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TipoAdminBTNActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TipoAdminBTNActionPerformed
+
+    private void CrearUsuarioBTN1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearUsuarioBTN1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CrearUsuarioBTN1ActionPerformed
 
     private void ActualizarUsuarioBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ActualizarUsuarioBTNActionPerformed
         // TODO add your handling code here:
@@ -217,22 +301,6 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
     private void EliminarUsuarioBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarUsuarioBTNActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_EliminarUsuarioBTNActionPerformed
-
-    private void BuscarBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarBTNActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BuscarBTNActionPerformed
-
-    private void NombreFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NombreFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NombreFieldActionPerformed
-
-    private void CrearUsuarioBTN1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearUsuarioBTN1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CrearUsuarioBTN1ActionPerformed
-
-    private void TipoAdminBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TipoAdminBTNActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TipoAdminBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -260,6 +328,7 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(UIADMINUSUARIOS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -271,9 +340,9 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton ActualizarUsuarioBTN;
+    public javax.swing.ButtonGroup BOTONES;
     private javax.swing.JLabel Bienvenido;
     private javax.swing.JLabel Bienvenido3;
-    public javax.swing.JButton BuscarBTN;
     public javax.swing.JTextField BuscarField;
     public javax.swing.JButton ConsultarTodosBTN;
     private javax.swing.JLabel Contraseña;
@@ -282,17 +351,16 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
     private javax.swing.JLabel Edad;
     public javax.swing.JTextField EdadField;
     public javax.swing.JButton EliminarUsuarioBTN;
-    private javax.swing.JLabel ID;
     private javax.swing.JLabel ID1;
     public javax.swing.JTextField IDField;
     private javax.swing.JLabel Nombre;
     public javax.swing.JTextField NombreField;
     public javax.swing.JTable TablaUsers;
-    private javax.swing.JRadioButton TipoAdminBTN;
-    private javax.swing.JRadioButton TipoUserBTN;
-    private javax.swing.JLabel Titulo;
+    private javax.swing.JLabel Tipo;
+    public javax.swing.JRadioButton TipoAdminBTN;
+    public javax.swing.JRadioButton TipoUserBTN;
     private javax.swing.JPanel panelAzul;
-    private javax.swing.JPanel panelblanco;
+    public javax.swing.JButton searchbtn;
     private javax.swing.JScrollPane tablaUsers;
     // End of variables declaration//GEN-END:variables
 }

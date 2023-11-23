@@ -3,7 +3,7 @@ package Vista;
 public class UITUTORIALES extends javax.swing.JFrame {
 
     /**
-     * Creates new form UITUTORIALES
+     * Creates new form tutorialesVista
      */
     public UITUTORIALES() {
         initComponents();
@@ -16,152 +16,115 @@ public class UITUTORIALES extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
-        panelAzul = new javax.swing.JPanel();
-        Iniciobtn = new javax.swing.JButton();
-        Configuracionbtn = new javax.swing.JButton();
-        tutorialesbtn = new javax.swing.JButton();
-        capacitacionesbtn = new javax.swing.JButton();
-        configuracionesbtn = new javax.swing.JButton();
-        mancha1 = new javax.swing.JLabel();
-        mancha2 = new javax.swing.JLabel();
-        panelblanco = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
-        jToggleButton1 = new javax.swing.JToggleButton();
+        tutosBTN = new javax.swing.JButton();
+        iniciobtn = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        buscarBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelAzul.setBackground(new java.awt.Color(31, 65, 169));
-        panelAzul.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(31, 65, 169));
 
-        Iniciobtn.setBackground(new java.awt.Color(31, 65, 169));
-        Iniciobtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        Iniciobtn.setForeground(new java.awt.Color(255, 255, 255));
-        Iniciobtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Home.png"))); // NOI18N
-        Iniciobtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                IniciobtnActionPerformed(evt);
+        tutosBTN.setText("TUTORIALES");
+        tutosBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                tutosBTNActionPerformed(evt);
             }
         });
-        panelAzul.add(Iniciobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 140, 30));
 
-        Configuracionbtn.setBackground(new java.awt.Color(31, 65, 169));
-        Configuracionbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        Configuracionbtn.setForeground(new java.awt.Color(255, 255, 255));
-        Configuracionbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Setting.png"))); // NOI18N
-        Configuracionbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConfiguracionbtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(Configuracionbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 140, 30));
+        iniciobtn.setText("INICIO");
 
-        tutorialesbtn.setBackground(new java.awt.Color(31, 65, 169));
-        tutorialesbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        tutorialesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        tutorialesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Category.png"))); // NOI18N
-        tutorialesbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tutorialesbtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(tutorialesbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 140, 30));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(tutosBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(iniciobtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(iniciobtn)
+                .addGap(18, 18, 18)
+                .addComponent(tutosBTN)
+                .addContainerGap(325, Short.MAX_VALUE))
+        );
 
-        capacitacionesbtn.setBackground(new java.awt.Color(31, 65, 169));
-        capacitacionesbtn.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        capacitacionesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        capacitacionesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Folder.png"))); // NOI18N
-        capacitacionesbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                capacitacionesbtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(capacitacionesbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 140, 30));
+        jLabel1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        jLabel1.setText("Tutoriales ");
 
-        configuracionesbtn.setBackground(new java.awt.Color(31, 65, 169));
-        configuracionesbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        configuracionesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        configuracionesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Chat.png"))); // NOI18N
-        configuracionesbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                configuracionesbtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(configuracionesbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 140, 30));
-
-        mancha1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Ellipse.png"))); // NOI18N
-        mancha1.setText("jLabel1");
-        panelAzul.add(mancha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, -1, -1));
-
-        mancha2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Vector 1.png"))); // NOI18N
-        mancha2.setText("jLabel1");
-        panelAzul.add(mancha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 260));
-
-        getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 720));
-
-        panelblanco.setBackground(new java.awt.Color(255, 255, 255));
-        panelblanco.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jTextField1.setBackground(new java.awt.Color(59, 159, 255));
-        jTextField1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField1.setText("Buscar...");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextField1.setText("Buscar");
+        jTextField1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextField1ActionPerformed(evt);
             }
         });
-        panelblanco.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 840, 40));
 
-        jPanel1.setForeground(new java.awt.Color(242, 242, 242));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        panelblanco.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 890, 580));
-
-        jToggleButton1.setBackground(new java.awt.Color(185, 189, 193));
-        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/search 1.png"))); // NOI18N
-        jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton1ActionPerformed(evt);
+        buscarBTN.setText("Buscar");
+        buscarBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                buscarBTNActionPerformed(evt);
             }
         });
-        panelblanco.add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 40, 40, 40));
 
-        getContentPane().add(panelblanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 1060, 720));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buscarBTN)))
+                .addGap(0, 90, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buscarBTN))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tutosBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutosBTNActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tutosBTNActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    private void buscarBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarBTNActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
-
-    private void IniciobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IniciobtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_IniciobtnActionPerformed
-
-    private void ConfiguracionbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfiguracionbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ConfiguracionbtnActionPerformed
-
-    private void tutorialesbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutorialesbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tutorialesbtnActionPerformed
-
-    private void capacitacionesbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_capacitacionesbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_capacitacionesbtnActionPerformed
-
-    private void configuracionesbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_configuracionesbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_configuracionesbtnActionPerformed
+    }//GEN-LAST:event_buscarBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -189,6 +152,7 @@ public class UITUTORIALES extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(UITUTORIALES.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -199,17 +163,11 @@ public class UITUTORIALES extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Configuracionbtn;
-    private javax.swing.JButton Iniciobtn;
-    private javax.swing.JButton capacitacionesbtn;
-    private javax.swing.JButton configuracionesbtn;
+    public javax.swing.JButton buscarBTN;
+    public javax.swing.JButton iniciobtn;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JLabel mancha1;
-    private javax.swing.JLabel mancha2;
-    private javax.swing.JPanel panelAzul;
-    private javax.swing.JPanel panelblanco;
-    private javax.swing.JButton tutorialesbtn;
+    private javax.swing.JButton tutosBTN;
     // End of variables declaration//GEN-END:variables
 }

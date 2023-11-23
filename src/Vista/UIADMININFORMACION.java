@@ -3,7 +3,7 @@ package Vista;
 public class UIADMININFORMACION extends javax.swing.JFrame {
 
     /**
-     * Creates new form UIADMININFORMACION
+     * Creates new form adminInfoVista
      */
     public UIADMININFORMACION() {
         initComponents();
@@ -16,90 +16,22 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
-        PanelBlanco = new javax.swing.JPanel();
+        panelAzul = new javax.swing.JPanel();
+        Bienvenido = new javax.swing.JLabel();
         Bienvenido3 = new javax.swing.JLabel();
         BuscarField = new javax.swing.JTextField();
         searchbtn = new javax.swing.JButton();
-        CrearUsuarioBTN = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        CrearUsuarioBTN1 = new javax.swing.JButton();
+        eliminarTutoBTN = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         textAreaInfo = new javax.swing.JTextArea();
-        panelAzul = new javax.swing.JPanel();
-        Bienvenido = new javax.swing.JLabel();
+        actualizarTutoBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        PanelBlanco.setBackground(new java.awt.Color(255, 255, 255));
-        PanelBlanco.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Bienvenido3.setBackground(new java.awt.Color(0, 0, 0));
-        Bienvenido3.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        Bienvenido3.setText("Buscar Tutoriales");
-        PanelBlanco.add(Bienvenido3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
-        PanelBlanco.add(BuscarField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 220, 30));
-
-        searchbtn.setBackground(new java.awt.Color(185, 189, 193));
-        searchbtn.setForeground(new java.awt.Color(185, 189, 193));
-        searchbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/search 1.png"))); // NOI18N
-        searchbtn.setBorder(null);
-        searchbtn.setBorderPainted(false);
-        searchbtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchbtnActionPerformed(evt);
-            }
-        });
-        PanelBlanco.add(searchbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, 40, 30));
-
-        CrearUsuarioBTN.setBackground(new java.awt.Color(59, 159, 255));
-        CrearUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        CrearUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
-        CrearUsuarioBTN.setText("Actualizar Tutorial");
-        CrearUsuarioBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CrearUsuarioBTNActionPerformed(evt);
-            }
-        });
-        PanelBlanco.add(CrearUsuarioBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 560, 170, 40));
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null},
-                {null},
-                {null},
-                {null}
-            },
-            new String [] {
-                "Tutorial"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
-
-        PanelBlanco.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 570, 110));
-
-        CrearUsuarioBTN1.setBackground(new java.awt.Color(59, 159, 255));
-        CrearUsuarioBTN1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        CrearUsuarioBTN1.setForeground(new java.awt.Color(255, 255, 255));
-        CrearUsuarioBTN1.setText("Eliminar Tutorial");
-        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CrearUsuarioBTN1ActionPerformed(evt);
-            }
-        });
-        PanelBlanco.add(CrearUsuarioBTN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 170, 40));
-
-        textAreaInfo.setColumns(20);
-        textAreaInfo.setRows(5);
-        jScrollPane2.setViewportView(textAreaInfo);
-
-        PanelBlanco.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 560, 240));
-
-        getContentPane().add(PanelBlanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 620, 640));
 
         panelAzul.setBackground(new java.awt.Color(35, 69, 169));
 
@@ -114,7 +46,7 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
             .addGroup(panelAzulLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(Bienvenido)
-                .addContainerGap(335, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelAzulLayout.setVerticalGroup(
             panelAzulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -124,22 +56,120 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
-        getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 80));
+        Bienvenido3.setBackground(new java.awt.Color(0, 0, 0));
+        Bienvenido3.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
+        Bienvenido3.setText("Buscar Tutoriales");
+
+        searchbtn.setBackground(new java.awt.Color(59, 159, 255));
+        searchbtn.setForeground(new java.awt.Color(185, 189, 193));
+        searchbtn.setText("BUSCAR");
+        searchbtn.setBorder(null);
+        searchbtn.setBorderPainted(false);
+        searchbtn.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                searchbtnActionPerformed(evt);
+            }
+        });
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][]
+            {
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String []
+            {
+                "Tutorial"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        eliminarTutoBTN.setBackground(new java.awt.Color(59, 159, 255));
+        eliminarTutoBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        eliminarTutoBTN.setForeground(new java.awt.Color(255, 255, 255));
+        eliminarTutoBTN.setText("Eliminar Tutorial");
+        eliminarTutoBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                eliminarTutoBTNActionPerformed(evt);
+            }
+        });
+
+        textAreaInfo.setColumns(20);
+        textAreaInfo.setRows(5);
+        jScrollPane2.setViewportView(textAreaInfo);
+
+        actualizarTutoBTN.setBackground(new java.awt.Color(59, 159, 255));
+        actualizarTutoBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        actualizarTutoBTN.setForeground(new java.awt.Color(255, 255, 255));
+        actualizarTutoBTN.setText("Actualizar Tutorial");
+        actualizarTutoBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                actualizarTutoBTNActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAzul, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(actualizarTutoBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 560, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(eliminarTutoBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(BuscarField, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(searchbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Bienvenido3)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(64, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelAzul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(Bienvenido3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BuscarField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(eliminarTutoBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(actualizarTutoBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(35, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CrearUsuarioBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearUsuarioBTNActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CrearUsuarioBTNActionPerformed
-
-    private void CrearUsuarioBTN1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearUsuarioBTN1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CrearUsuarioBTN1ActionPerformed
-
     private void searchbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchbtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_searchbtnActionPerformed
+
+    private void eliminarTutoBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarTutoBTNActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_eliminarTutoBTNActionPerformed
+
+    private void actualizarTutoBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarTutoBTNActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_actualizarTutoBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,6 +197,7 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(UIADMININFORMACION.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -179,15 +210,14 @@ public class UIADMININFORMACION extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Bienvenido;
     private javax.swing.JLabel Bienvenido3;
-    private javax.swing.JTextField BuscarField;
-    private javax.swing.JButton CrearUsuarioBTN;
-    private javax.swing.JButton CrearUsuarioBTN1;
-    private javax.swing.JPanel PanelBlanco;
+    public javax.swing.JTextField BuscarField;
+    public javax.swing.JButton actualizarTutoBTN;
+    public javax.swing.JButton eliminarTutoBTN;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
+    public javax.swing.JTable jTable1;
     private javax.swing.JPanel panelAzul;
-    private javax.swing.JButton searchbtn;
-    private javax.swing.JTextArea textAreaInfo;
+    public javax.swing.JButton searchbtn;
+    public javax.swing.JTextArea textAreaInfo;
     // End of variables declaration//GEN-END:variables
 }

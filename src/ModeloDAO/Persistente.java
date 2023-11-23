@@ -9,5 +9,5 @@ public interface Persistente
     public Buscable leer(int identificacion);
     public int actualizar(Buscable b);
     public int eliminar(int identificacion);
-    public AlmacenadorDatos consultarTodos();
+    public AlmacenadorDatos consultarTodos(); 
 }

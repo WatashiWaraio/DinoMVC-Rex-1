@@ -3,7 +3,7 @@ package Vista;
 public class UIADMIN extends javax.swing.JFrame {
 
     /**
-     * Creates new form UIADMIN
+     * Creates new form adminVista
      */
     public UIADMIN() {
         initComponents();
@@ -19,243 +19,91 @@ public class UIADMIN extends javax.swing.JFrame {
     private void initComponents()
     {
 
-        Fondoblanco = new javax.swing.JPanel();
-        Funciones = new javax.swing.JPanel();
-        Bienvenido = new javax.swing.JLabel();
-        inicio = new javax.swing.JLabel();
-        PQRbtn = new javax.swing.JButton();
-        AdminDatosbtn = new javax.swing.JButton();
-        Inventario = new javax.swing.JButton();
-        OrdenPedidobtn = new javax.swing.JButton();
-        GastosBtn1 = new javax.swing.JButton();
-        adminUsersbtn = new javax.swing.JButton();
-        panelAzul = new javax.swing.JPanel();
-        Configuracionbtn = new javax.swing.JButton();
-        Iniciobtn = new javax.swing.JButton();
-        tutorialesbtn = new javax.swing.JButton();
-        capacitacionesbtn = new javax.swing.JButton();
-        configuracionesbtn = new javax.swing.JButton();
-        mancha1 = new javax.swing.JLabel();
-        mancha2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        tutosBTN = new javax.swing.JButton();
+        iniciobtn = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        adminUsuarioBTN = new javax.swing.JButton();
+        adminInfoBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(31, 65, 169));
 
-        Fondoblanco.setBackground(new java.awt.Color(255, 255, 255));
-        Fondoblanco.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setBackground(new java.awt.Color(31, 65, 169));
 
-        Funciones.setBackground(new java.awt.Color(255, 255, 255));
-        Funciones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Bienvenido.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
-        Bienvenido.setForeground(new java.awt.Color(54, 159, 255));
-        Bienvenido.setText("Bienvenido, Usuario!");
-        Funciones.add(Bienvenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
-
-        inicio.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
-        inicio.setText("INICIO");
-        Funciones.add(inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 120, 30));
-
-        PQRbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Group 27.png"))); // NOI18N
-        PQRbtn.setBorder(null);
-        PQRbtn.setContentAreaFilled(false);
-        PQRbtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        PQRbtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        PQRbtn.addActionListener(new java.awt.event.ActionListener()
+        tutosBTN.setText("TUTORIALES");
+        tutosBTN.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                PQRbtnActionPerformed(evt);
+                tutosBTNActionPerformed(evt);
             }
         });
-        Funciones.add(PQRbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, 190, 130));
 
-        AdminDatosbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Group 44.png"))); // NOI18N
-        AdminDatosbtn.setBorder(null);
-        AdminDatosbtn.setContentAreaFilled(false);
-        AdminDatosbtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        AdminDatosbtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        AdminDatosbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                AdminDatosbtnActionPerformed(evt);
-            }
-        });
-        Funciones.add(AdminDatosbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 180, 130));
+        iniciobtn.setText("INICIO");
 
-        Inventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Group 26.png"))); // NOI18N
-        Inventario.setBorder(null);
-        Inventario.setContentAreaFilled(false);
-        Inventario.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Inventario.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        Inventario.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                InventarioActionPerformed(evt);
-            }
-        });
-        Funciones.add(Inventario, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, 190, 130));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(tutosBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(iniciobtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(iniciobtn)
+                .addGap(18, 18, 18)
+                .addComponent(tutosBTN)
+                .addContainerGap(325, Short.MAX_VALUE))
+        );
 
-        OrdenPedidobtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Group 25.png"))); // NOI18N
-        OrdenPedidobtn.setBorder(null);
-        OrdenPedidobtn.setBorderPainted(false);
-        OrdenPedidobtn.setContentAreaFilled(false);
-        OrdenPedidobtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                OrdenPedidobtnActionPerformed(evt);
-            }
-        });
-        Funciones.add(OrdenPedidobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 180, 130));
+        jLabel1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        jLabel1.setText("BIENVENIDO ADMINISTRADOR !!!");
 
-        GastosBtn1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Group 28.png"))); // NOI18N
-        GastosBtn1.setBorder(null);
-        GastosBtn1.setContentAreaFilled(false);
-        GastosBtn1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        GastosBtn1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        Funciones.add(GastosBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 180, 130));
+        adminUsuarioBTN.setText("Administracion de usuarios");
 
-        adminUsersbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Group 3.png"))); // NOI18N
-        adminUsersbtn.setBorder(null);
-        adminUsersbtn.setContentAreaFilled(false);
-        adminUsersbtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        adminUsersbtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        adminUsersbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                adminUsersbtnActionPerformed(evt);
-            }
-        });
-        Funciones.add(adminUsersbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, 180, 130));
+        adminInfoBTN.setText("Administracion de informacion");
 
-        Fondoblanco.add(Funciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1060, 720));
-
-        getContentPane().add(Fondoblanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 1060, 720));
-
-        panelAzul.setBackground(new java.awt.Color(31, 65, 169));
-        panelAzul.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Configuracionbtn.setBackground(new java.awt.Color(31, 65, 169));
-        Configuracionbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        Configuracionbtn.setForeground(new java.awt.Color(255, 255, 255));
-        Configuracionbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Setting.png"))); // NOI18N
-        Configuracionbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                ConfiguracionbtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(Configuracionbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 140, 30));
-
-        Iniciobtn.setBackground(new java.awt.Color(31, 65, 169));
-        Iniciobtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        Iniciobtn.setForeground(new java.awt.Color(255, 255, 255));
-        Iniciobtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Home.png"))); // NOI18N
-        Iniciobtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                IniciobtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(Iniciobtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 140, 30));
-
-        tutorialesbtn.setBackground(new java.awt.Color(31, 65, 169));
-        tutorialesbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        tutorialesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        tutorialesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Category.png"))); // NOI18N
-        tutorialesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                tutorialesbtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(tutorialesbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 140, 30));
-
-        capacitacionesbtn.setBackground(new java.awt.Color(31, 65, 169));
-        capacitacionesbtn.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        capacitacionesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        capacitacionesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Folder.png"))); // NOI18N
-        capacitacionesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                capacitacionesbtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(capacitacionesbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 140, 30));
-
-        configuracionesbtn.setBackground(new java.awt.Color(31, 65, 169));
-        configuracionesbtn.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        configuracionesbtn.setForeground(new java.awt.Color(255, 255, 255));
-        configuracionesbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Chat.png"))); // NOI18N
-        configuracionesbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                configuracionesbtnActionPerformed(evt);
-            }
-        });
-        panelAzul.add(configuracionesbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 140, 30));
-
-        mancha1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Ellipse.png"))); // NOI18N
-        mancha1.setText("jLabel1");
-        panelAzul.add(mancha1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, -1, -1));
-
-        mancha2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/IMG/DashBoard Usuario/Vector 1.png"))); // NOI18N
-        mancha2.setText("jLabel1");
-        panelAzul.add(mancha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 260));
-
-        getContentPane().add(panelAzul, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 720));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(adminInfoBTN)
+                        .addGap(18, 18, 18)
+                        .addComponent(adminUsuarioBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 85, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel1)
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(adminUsuarioBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(adminInfoBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ConfiguracionbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfiguracionbtnActionPerformed
+    private void tutosBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutosBTNActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ConfiguracionbtnActionPerformed
-
-    private void IniciobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IniciobtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_IniciobtnActionPerformed
-
-    private void tutorialesbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tutorialesbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tutorialesbtnActionPerformed
-
-    private void capacitacionesbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_capacitacionesbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_capacitacionesbtnActionPerformed
-
-    private void configuracionesbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_configuracionesbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_configuracionesbtnActionPerformed
-
-    private void PQRbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PQRbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PQRbtnActionPerformed
-
-    private void InventarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InventarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_InventarioActionPerformed
-
-    private void OrdenPedidobtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrdenPedidobtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_OrdenPedidobtnActionPerformed
-
-    private void adminUsersbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminUsersbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_adminUsersbtnActionPerformed
-
-    private void AdminDatosbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdminDatosbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AdminDatosbtnActionPerformed
+    }//GEN-LAST:event_tutosBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -283,6 +131,7 @@ public class UIADMIN extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(UIADMIN.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -293,23 +142,11 @@ public class UIADMIN extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AdminDatosbtn;
-    private javax.swing.JLabel Bienvenido;
-    private javax.swing.JButton Configuracionbtn;
-    private javax.swing.JPanel Fondoblanco;
-    private javax.swing.JPanel Funciones;
-    private javax.swing.JButton GastosBtn1;
-    private javax.swing.JButton Iniciobtn;
-    private javax.swing.JButton Inventario;
-    private javax.swing.JButton OrdenPedidobtn;
-    private javax.swing.JButton PQRbtn;
-    private javax.swing.JButton adminUsersbtn;
-    private javax.swing.JButton capacitacionesbtn;
-    private javax.swing.JButton configuracionesbtn;
-    private javax.swing.JLabel inicio;
-    private javax.swing.JLabel mancha1;
-    private javax.swing.JLabel mancha2;
-    private javax.swing.JPanel panelAzul;
-    private javax.swing.JButton tutorialesbtn;
+    public javax.swing.JButton adminInfoBTN;
+    public javax.swing.JButton adminUsuarioBTN;
+    public javax.swing.JButton iniciobtn;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton tutosBTN;
     // End of variables declaration//GEN-END:variables
 }
