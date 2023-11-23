@@ -59,11 +59,9 @@ public class ControllerAdminUsers implements ActionListener {
             usuario.setEdad(edad);
             usuario.setTipo(TipoUser);
             
-            usuario_dao.crear(usuario);
-            
-            if(usuario_dao.crear(usuario) == 1);
-                 JOptionPane.showMessageDialog(null, "Usuario Creado Exitosamente");
-            }    
+            if(1 == usuario_dao.crear(usuario))
+                JOptionPane.showMessageDialog(null, "Usuario Creado Exitosamente");
+        }
             
         
         if(e.getSource() == vistaAdminUsuario.searchbtn){
