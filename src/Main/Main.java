@@ -1,8 +1,6 @@
 package Main;
 
 import Controllers.ControllerLogin;
-import Controllers.ControllerAdminUsers;
-import Vista.UIADMINUSUARIOS;
 import Vista.UILOGIN;
 
 public class Main {
@@ -12,8 +10,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //new controladorAdminUsuarios(new adminUsuariosVista());
-        new ControllerLogin(new UILOGIN());
+        //new ControllerAdminUsers(new UIADMINUSUARIOS());
+         new ControllerLogin(new UILOGIN());
 
     }
     
