@@ -1,10 +1,6 @@
 package Controllers;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 import ModeloDAO.Persistente;
-import ModeloDTO.AlmacenadorDatos;
 import ModeloDTO.Usuario;
 import Vista.UIADMINUSUARIOS;
 import java.awt.event.ActionEvent;
