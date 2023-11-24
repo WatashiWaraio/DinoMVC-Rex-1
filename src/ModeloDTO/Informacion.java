@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 import java.time.LocalTime;
 
 public class Informacion extends Buscable {
-    private String tipo;
+    private String nombre;
     private BufferedImage imagenSoporte;
     private String informacion; 
     private LocalTime fecha;  
@@ -14,12 +14,12 @@ public class Informacion extends Buscable {
         fecha = LocalTime.now();
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public BufferedImage getImagenSoporte() {
