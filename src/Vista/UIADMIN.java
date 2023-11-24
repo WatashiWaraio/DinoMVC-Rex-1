@@ -16,8 +16,7 @@ public class UIADMIN extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         tutosBTN = new javax.swing.JButton();
@@ -32,10 +31,8 @@ public class UIADMIN extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(31, 65, 169));
 
         tutosBTN.setText("TUTORIALES");
-        tutosBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        tutosBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tutosBTNActionPerformed(evt);
             }
         });
@@ -147,6 +144,6 @@ public class UIADMIN extends javax.swing.JFrame {
     public javax.swing.JButton iniciobtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton tutosBTN;
+    public javax.swing.JButton tutosBTN;
     // End of variables declaration//GEN-END:variables
 }
