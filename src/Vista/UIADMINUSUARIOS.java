@@ -1,6 +1,7 @@
 package Vista;
 
 import javax.swing.JFrame;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 public class UIADMINUSUARIOS extends javax.swing.JFrame {
@@ -108,6 +109,14 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
                 "ID", "Nombre", "Edad"
             }
         ));
+        TablaUsers.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TablaUsersMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                TablaUsersMousePressed(evt);
+            }
+        });
         tablaUsers.setViewportView(TablaUsers);
 
         Nombre.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
@@ -286,6 +295,15 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
     private void EliminarUsuarioBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarUsuarioBTNActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_EliminarUsuarioBTNActionPerformed
+
+    private void TablaUsersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaUsersMouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_TablaUsersMouseClicked
+
+    private void TablaUsersMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TablaUsersMousePressed
+
+    }//GEN-LAST:event_TablaUsersMousePressed
 
     /**
      * @param args the command line arguments

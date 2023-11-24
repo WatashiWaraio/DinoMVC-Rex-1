@@ -18,8 +18,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       // new ControllerAdminUsers(new UIADMINUSUARIOS());
-       new ControllerLogin(new UILOGIN());
+        new ControllerAdminUsers(new UIADMINUSUARIOS());
+       //new ControllerLogin(new UILOGIN());
        // new ControllerUser(new UIUSER());
         //new ControllerAdmin(new UIADMIN());
         //new ControllerTutoriales(new UITUTORIALES());  
