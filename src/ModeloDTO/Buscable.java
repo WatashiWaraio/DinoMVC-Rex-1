@@ -1,6 +1,10 @@
 package ModeloDTO;
 
-public abstract class Buscable {
+import java.io.Serializable;
+
+public abstract class Buscable implements Serializable {
+    private static final long serialVersionUID = 18L;
+    
     private int identificacion;
 
     public int getIdentificacion() {
