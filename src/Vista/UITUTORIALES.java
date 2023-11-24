@@ -23,8 +23,11 @@ public class UITUTORIALES extends javax.swing.JFrame {
         tutosBTN = new javax.swing.JButton();
         iniciobtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        IDField = new javax.swing.JTextField();
         buscarBTN = new javax.swing.JButton();
+        todosBTN = new javax.swing.JButton();
+        tablaUsers = new javax.swing.JScrollPane();
+        tablaInfo = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,18 +62,17 @@ public class UITUTORIALES extends javax.swing.JFrame {
                 .addComponent(iniciobtn)
                 .addGap(18, 18, 18)
                 .addComponent(tutosBTN)
-                .addContainerGap(325, Short.MAX_VALUE))
+                .addContainerGap(298, Short.MAX_VALUE))
         );
 
         jLabel1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         jLabel1.setText("Tutoriales ");
 
-        jTextField1.setText("Buscar");
-        jTextField1.addActionListener(new java.awt.event.ActionListener()
+        IDField.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jTextField1ActionPerformed(evt);
+                IDFieldActionPerformed(evt);
             }
         });
 
@@ -83,6 +85,58 @@ public class UITUTORIALES extends javax.swing.JFrame {
             }
         });
 
+        todosBTN.setText("Todos");
+        todosBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                todosBTNActionPerformed(evt);
+            }
+        });
+
+        tablaInfo.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][]
+            {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String []
+            {
+                "ID", "Nombre", "Fecha"
+            }
+        )
+        {
+            boolean[] canEdit = new boolean []
+            {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex)
+            {
+                return canEdit [columnIndex];
+            }
+        });
+        tablaUsers.setViewportView(tablaInfo);
+        tablaInfo.getAccessibleContext().setAccessibleParent(jPanel1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -93,10 +147,13 @@ public class UITUTORIALES extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(IDField, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(buscarBTN)))
-                .addGap(0, 90, Short.MAX_VALUE))
+                        .addComponent(buscarBTN)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(todosBTN))
+                    .addComponent(tablaUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -106,8 +163,11 @@ public class UITUTORIALES extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buscarBTN))
+                    .addComponent(IDField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buscarBTN)
+                    .addComponent(todosBTN))
+                .addGap(18, 18, 18)
+                .addComponent(tablaUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -118,13 +178,18 @@ public class UITUTORIALES extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tutosBTNActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void IDFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IDFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_IDFieldActionPerformed
 
     private void buscarBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscarBTNActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buscarBTNActionPerformed
+
+    private void todosBTNActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_todosBTNActionPerformed
+    {//GEN-HEADEREND:event_todosBTNActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_todosBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,11 +228,14 @@ public class UITUTORIALES extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JTextField IDField;
     public javax.swing.JButton buscarBTN;
     public javax.swing.JButton iniciobtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
+    public javax.swing.JTable tablaInfo;
+    private javax.swing.JScrollPane tablaUsers;
+    public javax.swing.JButton todosBTN;
     private javax.swing.JButton tutosBTN;
     // End of variables declaration//GEN-END:variables
 }
