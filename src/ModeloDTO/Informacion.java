@@ -2,6 +2,7 @@ package ModeloDTO;
 
 import java.awt.image.BufferedImage;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Informacion extends Buscable {
     private String nombre;
@@ -36,5 +37,10 @@ public class Informacion extends Buscable {
 
     public void setInformacion(String informacion) {
         this.informacion = informacion;
+    }
+    
+    public String getFecha()
+    {
+        return fecha.format(DateTimeFormatter.RFC_1123_DATE_TIME);
     }
 }

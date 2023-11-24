@@ -28,6 +28,7 @@ public class UITUTORIALES extends javax.swing.JFrame {
         todosBTN = new javax.swing.JButton();
         tablaUsers = new javax.swing.JScrollPane();
         tablaInfo = new javax.swing.JTable();
+        mostrarBTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,7 +63,7 @@ public class UITUTORIALES extends javax.swing.JFrame {
                 .addComponent(iniciobtn)
                 .addGap(18, 18, 18)
                 .addComponent(tutosBTN)
-                .addContainerGap(298, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
@@ -137,6 +138,15 @@ public class UITUTORIALES extends javax.swing.JFrame {
         tablaUsers.setViewportView(tablaInfo);
         tablaInfo.getAccessibleContext().setAccessibleParent(jPanel1);
 
+        mostrarBTN.setText("Mostrar");
+        mostrarBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                mostrarBTNActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -152,8 +162,9 @@ public class UITUTORIALES extends javax.swing.JFrame {
                         .addComponent(buscarBTN)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(todosBTN))
-                    .addComponent(tablaUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 23, Short.MAX_VALUE))
+                    .addComponent(tablaUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(mostrarBTN))
+                .addGap(0, 22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,8 +178,10 @@ public class UITUTORIALES extends javax.swing.JFrame {
                     .addComponent(buscarBTN)
                     .addComponent(todosBTN))
                 .addGap(18, 18, 18)
-                .addComponent(tablaUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(tablaUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(mostrarBTN)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         pack();
@@ -190,6 +203,11 @@ public class UITUTORIALES extends javax.swing.JFrame {
     {//GEN-HEADEREND:event_todosBTNActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_todosBTNActionPerformed
+
+    private void mostrarBTNActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_mostrarBTNActionPerformed
+    {//GEN-HEADEREND:event_mostrarBTNActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mostrarBTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -233,6 +251,7 @@ public class UITUTORIALES extends javax.swing.JFrame {
     public javax.swing.JButton iniciobtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    public javax.swing.JButton mostrarBTN;
     public javax.swing.JTable tablaInfo;
     private javax.swing.JScrollPane tablaUsers;
     public javax.swing.JButton todosBTN;
