@@ -72,7 +72,7 @@ public class ArchivoHashMap<T extends Buscable> implements Persistente
         T dato = (T) b;
         int success = 1;
 
-        if (datos.getLista().remove(dato.getIdentificacion(), dato)) {
+        if (null != datos.getLista().remove(dato.getIdentificacion())) {
             datos.getLista().put(dato.getIdentificacion(), dato);
             updateDAO();
         } else {
