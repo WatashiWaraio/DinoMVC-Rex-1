@@ -9,6 +9,7 @@ import Vista.UITUTORIALES;
 import Vista.UIUSER;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.format.DateTimeFormatter;
 import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -17,7 +18,7 @@ public class ControllerTutoriales implements ActionListener
 {
     private final UITUTORIALES vistaTutoriales;
     private final Persistente info_dao;
-    private final DefaultTableModel tabla;
+    private DefaultTableModel tabla;
     private UIUSER frame;
     private UIADMIN frame2;
     
@@ -25,7 +26,6 @@ public class ControllerTutoriales implements ActionListener
     
     public ControllerTutoriales(UITUTORIALES vistaTutoriales, UIADMIN frame2) 
     {
-        this.tabla = (DefaultTableModel) vistaTutoriales.tablaInfo.getModel();
         this.vistaTutoriales = vistaTutoriales;
         this.frame2 = frame2;
         
@@ -41,7 +41,6 @@ public class ControllerTutoriales implements ActionListener
     
     public ControllerTutoriales(UITUTORIALES vistaTutoriales, UIUSER frame) 
     {
-        this.tabla = (DefaultTableModel) vistaTutoriales.tablaInfo.getModel();
         this.vistaTutoriales = vistaTutoriales;
         this.frame = frame;
         
@@ -55,13 +54,15 @@ public class ControllerTutoriales implements ActionListener
         info_dao = new ArchivoHashMap<Informacion>("info.dat");
     }
     
+    @Override
     public void actionPerformed(ActionEvent e)
     {
+        tabla = (DefaultTableModel) vistaTutoriales.tablaInfo.getModel();
         if (e.getSource() == vistaTutoriales.todosBTN) {
             AlmacenadorDatos infos = info_dao.consultarTodos();
             Map<Integer, Informacion> infos_datos = infos.getLista();
             
-            tabla.setRowCount(infos_datos.size());
+            tabla.setRowCount(0);
             
             for (Map.Entry<Integer, Informacion> entrada : infos_datos.entrySet()) {
                         info_o = (Informacion) entrada.getValue();
@@ -70,8 +71,8 @@ public class ControllerTutoriales implements ActionListener
         }
         
         if (e.getSource() == vistaTutoriales.buscarBTN) {
+            tabla.setRowCount(0);
             info_o = (Informacion) info_dao.leer(Integer.parseInt(vistaTutoriales.IDField.getText()));
-            tabla.setRowCount(1);
             
             if (info_o != null)
                 tabla.addRow(new Object[]{info_o.getIdentificacion(), info_o.getNombre(), info_o.getFecha()});

@@ -98,43 +98,13 @@ public class UITUTORIALES extends javax.swing.JFrame {
         tablaInfo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][]
             {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+
             },
             new String []
             {
                 "ID", "Nombre", "Fecha"
             }
-        )
-        {
-            boolean[] canEdit = new boolean []
-            {
-                false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex)
-            {
-                return canEdit [columnIndex];
-            }
-        });
+        ));
         tablaUsers.setViewportView(tablaInfo);
         tablaInfo.getAccessibleContext().setAccessibleParent(jPanel1);
 

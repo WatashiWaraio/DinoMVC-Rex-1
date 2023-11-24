@@ -34,7 +34,7 @@ public class ControllerAdmin {
     private class AdminInfoListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-          // new ControllerAdminInfo(new UIADMININFORMACION());
+            new ControllerAdminInfo(new UIADMININFORMACION());
         }
     }
 
