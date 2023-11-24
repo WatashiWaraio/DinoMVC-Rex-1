@@ -7,6 +7,7 @@ import ModeloDTO.Usuario;
 import java.util.Objects;
 
 import Controllers.ControllerUser;
+import ModeloDAO.Persistente;
 
 
 public class UILOGIN extends javax.swing.JFrame {
@@ -18,26 +19,7 @@ public class UILOGIN extends javax.swing.JFrame {
         initComponents();
     }
 
-    private void OnLoginActionPerformed(java.awt.event.ActionEvent evt) {                                                 
-        ArchivoHashMap archivoHashMap = new ArchivoHashMap("user.dat");
-
-        Usuario usuarioEncontrado = (Usuario) archivoHashMap.leer(Integer.parseInt(UsuarioField.getText()));
-        Boolean contrasenaIgual = Objects.equals(usuarioEncontrado.getContrasena(), contraseñaField.getText());
-
-
-        if(contrasenaIgual){
-            if(Objects.equals(usuarioEncontrado.getTipo(), "Administrador")){
-//                System.out.println("Mostrar pantalla Admin");
-                new ControllerAdmin(new UIADMIN());
-                this.setVisible(false);
-            }
-            if(Objects.equals(usuarioEncontrado.getTipo(), "Usuario")){
-//                System.out.println("Mostrar pantalla usuario");
-                new ControllerUser(new UIUSER());
-                this.setVisible(false);
-            }
-        }
-    }
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -46,8 +28,7 @@ public class UILOGIN extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         text1 = new javax.swing.JLabel();
@@ -70,10 +51,8 @@ public class UILOGIN extends javax.swing.JFrame {
         text2.setForeground(new java.awt.Color(242, 242, 242));
         text2.setText("Ingrese su usuario y contraseña");
 
-        UsuarioField.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        UsuarioField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsuarioFieldActionPerformed(evt);
             }
         });

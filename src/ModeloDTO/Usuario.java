@@ -39,4 +39,3 @@ public class Usuario extends Buscable {
     }   
     
 }
-

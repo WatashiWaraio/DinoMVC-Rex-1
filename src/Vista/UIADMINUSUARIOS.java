@@ -20,8 +20,7 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         BOTONES = new javax.swing.ButtonGroup();
         panelAzul = new javax.swing.JPanel();
@@ -80,10 +79,8 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         searchbtn.setText("BUSCAR");
         searchbtn.setBorder(null);
         searchbtn.setBorderPainted(false);
-        searchbtn.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        searchbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchbtnActionPerformed(evt);
             }
         });
@@ -92,25 +89,21 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         ConsultarTodosBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         ConsultarTodosBTN.setForeground(new java.awt.Color(255, 255, 255));
         ConsultarTodosBTN.setText("Consultar Todos ");
-        ConsultarTodosBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        ConsultarTodosBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ConsultarTodosBTNActionPerformed(evt);
             }
         });
 
         TablaUsers.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
                 {null, null, null},
                 {null, null, null},
                 {null, null, null},
                 {null, null, null}
             },
-            new String []
-            {
-                "ID", "Edad", "Nombre"
+            new String [] {
+                "ID", "Nombre", "Edad"
             }
         ));
         tablaUsers.setViewportView(TablaUsers);
@@ -121,10 +114,8 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         Edad.setFont(new java.awt.Font("Eras Medium ITC", 1, 18)); // NOI18N
         Edad.setText("Edad");
 
-        NombreField.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        NombreField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NombreFieldActionPerformed(evt);
             }
         });
@@ -140,10 +131,8 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
 
         TipoAdminBTN.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
         TipoAdminBTN.setText("ADMINISTRADOR");
-        TipoAdminBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        TipoAdminBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TipoAdminBTNActionPerformed(evt);
             }
         });
@@ -155,10 +144,8 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         CrearUsuarioBTN1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         CrearUsuarioBTN1.setForeground(new java.awt.Color(255, 255, 255));
         CrearUsuarioBTN1.setText("Crear Usuario");
-        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        CrearUsuarioBTN1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CrearUsuarioBTN1ActionPerformed(evt);
             }
         });
@@ -167,10 +154,8 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         ActualizarUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         ActualizarUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
         ActualizarUsuarioBTN.setText("Actualizar Usuario ");
-        ActualizarUsuarioBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        ActualizarUsuarioBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ActualizarUsuarioBTNActionPerformed(evt);
             }
         });
@@ -179,10 +164,8 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
         EliminarUsuarioBTN.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         EliminarUsuarioBTN.setForeground(new java.awt.Color(255, 255, 255));
         EliminarUsuarioBTN.setText("Eliminar Usuario");
-        EliminarUsuarioBTN.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        EliminarUsuarioBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EliminarUsuarioBTNActionPerformed(evt);
             }
         });

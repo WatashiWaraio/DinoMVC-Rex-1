@@ -14,7 +14,7 @@ public class ControllerAdminUsers implements ActionListener {
     private final UIADMINUSUARIOS vistaAdminUsuario;
    
     private Usuario usuario;
-    private Persistente usuario_dao;
+    private final Persistente usuario_dao;
     private String TipoUser;
     
 
@@ -59,9 +59,9 @@ public class ControllerAdminUsers implements ActionListener {
             usuario.setEdad(edad);
             usuario.setTipo(TipoUser);
             
-            if(1 == usuario_dao.crear(usuario))
-                JOptionPane.showMessageDialog(null, "Usuario Creado Exitosamente");
-        }
+            if(usuario_dao.crear(usuario) == 1)
+                 JOptionPane.showMessageDialog(null, "Usuario Creado Exitosamente");
+        }    
             
         
         if(e.getSource() == vistaAdminUsuario.searchbtn){
@@ -91,9 +91,3 @@ public class ControllerAdminUsers implements ActionListener {
     }
 
 }                   
-
-    
-     
-
-
-
