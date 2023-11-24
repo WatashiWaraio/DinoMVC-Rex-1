@@ -1,10 +1,6 @@
 package Controllers;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 import ModeloDAO.Persistente;
-import ModeloDTO.AlmacenadorDatos;
 import ModeloDTO.Usuario;
 import Vista.UIADMINUSUARIOS;
 import java.awt.event.ActionEvent;
@@ -18,7 +14,7 @@ public class ControllerAdminUsers implements ActionListener {
     private final UIADMINUSUARIOS vistaAdminUsuario;
    
     private Usuario usuario;
-    private Persistente usuario_dao;
+    private final Persistente usuario_dao;
     private String TipoUser;
     
 
@@ -63,11 +59,9 @@ public class ControllerAdminUsers implements ActionListener {
             usuario.setEdad(edad);
             usuario.setTipo(TipoUser);
             
-            usuario_dao.crear(usuario);
-            
-            if(usuario_dao.crear(usuario) == 1);
+            if(usuario_dao.crear(usuario) == 1)
                  JOptionPane.showMessageDialog(null, "Usuario Creado Exitosamente");
-            }    
+        }    
             
         
         if(e.getSource() == vistaAdminUsuario.searchbtn){
@@ -97,9 +91,3 @@ public class ControllerAdminUsers implements ActionListener {
     }
 
 }                   
-
-    
-     
-
-
-

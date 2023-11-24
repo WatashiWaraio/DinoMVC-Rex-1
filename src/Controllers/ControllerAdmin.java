@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 
 public class ControllerAdmin {
 
-    private UIADMIN vista;
+    private final UIADMIN vista;
 
     public ControllerAdmin(UIADMIN vista) {
         this.vista = vista;
@@ -18,6 +18,8 @@ public class ControllerAdmin {
         this.vista.tutosBTN.addActionListener(new TutorialesListener());
         this.vista.adminInfoBTN.addActionListener(new AdminInfoListener());
         this.vista.adminUsuarioBTN.addActionListener(new AdminUsuariosListener());
+        
+        this.vista.setVisible(true);
     }
 
     private class InicioListener implements ActionListener {
@@ -48,6 +50,7 @@ public class ControllerAdmin {
     }
 
     private class AdminUsuariosListener implements ActionListener {
+        
         @Override
         public void actionPerformed(ActionEvent e) {
             UIADMINUSUARIOS adminUsuarios = new UIADMINUSUARIOS();
