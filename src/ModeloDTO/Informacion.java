@@ -1,13 +1,18 @@
 package ModeloDTO;
 
 import java.awt.image.BufferedImage;
-import java.util.Date;
+import java.time.LocalTime;
 
 public class Informacion extends Buscable {
     private String tipo;
     private BufferedImage imagenSoporte;
     private String informacion; 
-    private Date fecha;  
+    private LocalTime fecha;  
+    
+    public Informacion()
+    {
+        fecha = LocalTime.now();
+    }
 
     public String getTipo() {
         return tipo;
@@ -32,15 +37,4 @@ public class Informacion extends Buscable {
     public void setInformacion(String informacion) {
         this.informacion = informacion;
     }
-
-    public Date getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
-    
-    
-    
 }
