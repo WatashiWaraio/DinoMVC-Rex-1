@@ -12,6 +12,7 @@ public class AlmacenadorDatos<T extends Buscable>{
     public void setLista(Map<Integer, T> lista) {
         this.lista = lista;
     }
+
     
     
     
