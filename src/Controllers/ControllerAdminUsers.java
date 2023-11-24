@@ -61,7 +61,9 @@ public class ControllerAdminUsers implements ActionListener {
             usuario.setTipo(TipoUser);
             
             if(usuario_dao.crear(usuario) == 1)
-                 JOptionPane.showMessageDialog(null, "Usuario Creado Exitosamente");
+                JOptionPane.showMessageDialog(null, "Usuario Creado Exitosamente");
+            else
+                JOptionPane.showMessageDialog(null, "Usuario existente");
         }    
             
         
@@ -69,12 +71,11 @@ public class ControllerAdminUsers implements ActionListener {
            
             int id = Integer.parseInt(vistaAdminUsuario.BuscarField.getText());
             usuario = (Usuario) usuario_dao.leer(id);
+            
+            model.setRowCount(0);
 
-            if(null != usuario){
+            if(null != usuario)
                 model.addRow(new Object[]{id, usuario.getNombre(), usuario.getEdad()});
-            }else {
-               JOptionPane.showMessageDialog(null, "Usuario No Existe");
-            }
         }
         
         if (e.getSource() == vistaAdminUsuario.EliminarUsuarioBTN) {
@@ -94,9 +95,8 @@ public class ControllerAdminUsers implements ActionListener {
             
             AlmacenadorDatos usuarios = usuario_dao.consultarTodos();
             Map<Integer, Usuario> datos = usuarios.getLista();
-            
-            model.removeRow(0);
-            
+
+            model.setRowCount(0);
            
              for (Map.Entry<Integer, Usuario> entrada : datos.entrySet()) {
                     usuario = (Usuario) entrada.getValue();
@@ -119,10 +119,6 @@ public class ControllerAdminUsers implements ActionListener {
                     TipoUser = "Usuario";
                  }
 
-   
-            usuario = (Usuario) usuario_dao.leer(id);
-
-            if (usuario!= null) {
                Usuario usuario = new Usuario();
                usuario.setContrasena(contrasena);
                usuario.setIdentificacion(id);
@@ -136,11 +132,8 @@ public class ControllerAdminUsers implements ActionListener {
             if (resultadoActualizacion == 1) {
                 JOptionPane.showMessageDialog(null, "Usuario Actualizado");
             } else {
-                JOptionPane.showMessageDialog(null, "Usuario No Actualizado");
+                JOptionPane.showMessageDialog(null, "Usuario no existente");
             }
-        } else {
-            JOptionPane.showMessageDialog(null, "No se encontró ningún usuario con ese ID");
-        }
     }   
     
   }
