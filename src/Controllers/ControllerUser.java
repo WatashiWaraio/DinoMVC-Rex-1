@@ -1,6 +1,7 @@
 
 package Controllers;
 
+import Vista.UIADMINUSUARIOS;
 import Vista.UIUSER;
 import Vista.UITUTORIALES;
 
@@ -13,24 +14,17 @@ public class ControllerUser {
 
     public ControllerUser(UIUSER vista) {
         this.vista = vista;
-        this.vista.iniciobtn.addActionListener(new InicioListener());
         this.vista.tutosBTN.addActionListener(new TutorialesListener());
         this.vista.setVisible(true);
     }
 
-    private class InicioListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            UIUSER inicio = new UIUSER();
-            inicio.setVisible(true);
-        }
-    }
-
+    
     private class TutorialesListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            UITUTORIALES tutoriales = new UITUTORIALES();
-            tutoriales.setVisible(true);
+           vista.setVisible(false);
+           new ControllerTutoriales(new UITUTORIALES(),vista);  
+             
         }
     }
 }

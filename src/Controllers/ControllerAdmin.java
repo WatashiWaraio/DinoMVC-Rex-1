@@ -14,7 +14,6 @@ public class ControllerAdmin {
 
     public ControllerAdmin(UIADMIN vista) {
         this.vista = vista;
-        this.vista.iniciobtn.addActionListener(new InicioListener());
         this.vista.tutosBTN.addActionListener(new TutorialesListener());
         this.vista.adminInfoBTN.addActionListener(new AdminInfoListener());
         this.vista.adminUsuarioBTN.addActionListener(new AdminUsuariosListener());
@@ -22,30 +21,20 @@ public class ControllerAdmin {
         this.vista.setVisible(true);
     }
 
-    private class InicioListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            UIADMIN inicio = new UIADMIN();
-            inicio.setVisible(true);
-            vista.setVisible(false);
-        }
-    }
+    
 
     private class TutorialesListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            UITUTORIALES tutoriales = new UITUTORIALES();
-            tutoriales.setVisible(true);
-            vista.setVisible(false);
+           vista.setVisible(false);
+           new ControllerTutoriales(new UITUTORIALES(),vista);  
         }
     }
 
     private class AdminInfoListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            UIADMININFORMACION adminInfo = new UIADMININFORMACION();
-            adminInfo.setVisible(true);
-            vista.setVisible(false);
+          // new ControllerAdminInfo(new UIADMININFORMACION());
         }
     }
 
@@ -53,9 +42,7 @@ public class ControllerAdmin {
         
         @Override
         public void actionPerformed(ActionEvent e) {
-            UIADMINUSUARIOS adminUsuarios = new UIADMINUSUARIOS();
-            adminUsuarios.setVisible(true);
-            vista.setVisible(false);
+            new ControllerAdminUsers(new UIADMINUSUARIOS());
         }
     }
 }
