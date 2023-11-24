@@ -1,5 +1,6 @@
 package Vista;
 
+import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 
 public class UIADMINUSUARIOS extends javax.swing.JFrame {
@@ -11,6 +12,7 @@ public class UIADMINUSUARIOS extends javax.swing.JFrame {
   
     public UIADMINUSUARIOS() {
         initComponents();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
