@@ -16,7 +16,8 @@ public class UIADMIN extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jPanel1 = new javax.swing.JPanel();
         tutosBTN = new javax.swing.JButton();
@@ -31,8 +32,10 @@ public class UIADMIN extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(31, 65, 169));
 
         tutosBTN.setText("TUTORIALES");
-        tutosBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        tutosBTN.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 tutosBTNActionPerformed(evt);
             }
         });
@@ -79,8 +82,8 @@ public class UIADMIN extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(adminInfoBTN)
                         .addGap(18, 18, 18)
-                        .addComponent(adminUsuarioBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 85, Short.MAX_VALUE))
+                        .addComponent(adminUsuarioBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 51, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
