@@ -1,5 +1,6 @@
-DinoMVC-Rex 🦖
-ABOUT DinoMVC-Rex
+***DinoMVC-Rex 🦖***
+
+**ABOUT DinoMVC-Rex**
 
 "This project is a university assignment for the Fundamentals of Software Design course(POO). Within this subject, we explore MVC architecture, UML design, and various methodologies for effective software development.
 Our instructor primarily focuses on guiding us through creating well-structured software designs. I'll be collaborating on this project with my partners."
